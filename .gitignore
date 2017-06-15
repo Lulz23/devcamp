@@ -13,5 +13,8 @@
 !/log/.keep
 !/tmp/.keep
 
+# I don’t want to show my secrets
+/config/secrets.yml
+
 # Ignore Byebug command history file.
 .byebug_history
