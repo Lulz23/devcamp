@@ -10,8 +10,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
- @blog = Blog.find(2)
-  end 
+  end
 
   # GET /blogs/new
   def new
@@ -73,3 +72,7 @@ class BlogsController < ApplicationController
       params.require(:blog).permit(:title, :body)
     end
 end
+
+   
+
+    
