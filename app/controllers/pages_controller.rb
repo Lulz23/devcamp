@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def home
+def home
     @post = Blog .all
     @skills = Skill.all
   end
