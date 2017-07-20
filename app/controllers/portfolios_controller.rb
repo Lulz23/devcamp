@@ -45,12 +45,16 @@ end
   def update
     @portfolio_item = Portfolio.find(params[:id])
       respond_to do |format|
-      if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+      if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
       format.html { redirect_to portfolios_path, notice: 'The record was successfully updated.' }
       else
       format.html { render :edit }
       end
     end
+  end
+  def new 
+    @portfolio_items = Portfolio.new
+    3.times { @portfolio_items.technologies.build }
   end
   
 end
