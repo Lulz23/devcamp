@@ -1,3 +1,5 @@
+
+puts "3 technologies created"
 3.times do |topic|
     Topic.create!(
       title: "Topic #{topic}"
@@ -55,3 +57,9 @@ end
 
 puts " 9 porfolios created"
 
+3.times do |technology|
+  Technology.create!(
+    name: "Technology #{technology}",
+    portfolio_id: Portfolio.last.id
+    )
+end
