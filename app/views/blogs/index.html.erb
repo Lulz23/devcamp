@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Blog Title</th>
+      <th>Date</th>
       <th>Body</th>
       <th colspan="4"></th>
     </tr>
@@ -15,3 +16,7 @@
     <%= render @blogs %>
   </tbody>
 </table>
+
+<br>
+
+<%= link_to 'New_blog', new_blog_path %>
