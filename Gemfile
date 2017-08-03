@@ -57,3 +57,4 @@ gem 'devise', '~> 4.2'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
 gem 'rawr_view_tool', git: 'https://github.com/Lulz23/rawr_view_tool'
+gem 'petergate', '~> 1.7', '>= 1.7.5'
