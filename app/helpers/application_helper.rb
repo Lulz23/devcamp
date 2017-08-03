@@ -15,4 +15,8 @@ module ApplicationHelper
        content_tag(:p, greeting, class: "source-greeting") 
        end 
   end
+  
+  def copyright_generator
+     RandomgamViewTool::Renderer.copyright 'William', 'All rights reserved'
+  end
 end
